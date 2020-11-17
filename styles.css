@@ -1,0 +1,224 @@
+:root {
+    --large-font: 'Cuprum', sans-serif;
+    --small-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    background: rgb(187, 33, 64);
+    position: fixed;
+}
+
+#navbar a {
+    font-family: var(--large-font);
+    margin: 40px;
+    font-size: 1.8rem;
+    text-decoration-line: none;
+    color: snow;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background: rgb(4, 17, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    margin-top: -100px;
+    font-size: 4rem;
+    color: snow;
+    font-weight: 800;
+    font-family: var(--small-font);
+}
+
+#welcome-section p {
+    font-size: 2rem;
+    color: rgb(187, 33, 64);
+    font-weight: lighter;
+    font-family: var(--small-font);
+    font-style: italic;
+}
+
+#project-head {
+    text-align: center;
+    background: darkcyan;
+    padding: 10px;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-family: var(--small-font);
+    color: snow;
+}
+
+#project-tile {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    background: darkcyan;
+}
+
+#project-tile .tile {
+    border: 2px solid whitesmoke;
+    margin: 10px;
+}
+
+.tile p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-bottom: 132px;
+}
+
+.tile h3 {
+    background: rgb(4, 17, 41);
+    font-size: 1.5rem;
+    text-align: center;
+    top: 132px;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background: rgb(4, 17, 41);
+    color: snow;
+}
+
+#contact-section {
+    position: relative;
+    text-align: center;
+    top: 180px;
+    font-family: var(--small-font);
+}
+
+footer h1 {
+    font-size: 4rem;
+}
+
+#contact-section p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 20px;
+}
+
+#profile-link {
+    position: relative;
+    text-align: center;
+    bottom: -280px;
+}
+
+#profile-link a {
+    font-family: var(--large-font);
+    font-size: 1.8rem;
+    padding: 12px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    height: 85%;
+}
+
+hr {
+    position: relative;
+    text-align: center;
+    top: 400px;
+    background: rgb(187, 33, 64);
+    height: 5px;
+    border: none;
+}
+
+@media(max-width:750px) {
+    #navbar {
+        justify-content: center;
+        height: 50px;
+    }
+    #navbar a {
+        font-family: var(--small-font);
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+    /* #welcome-section {
+        width: 100%;
+        height: 100vh;
+        background: rgb(4, 17, 41);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    #welcome-section h1 {
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+    #welcome-section p {
+        font-size: 1.2rem;
+    }
+    #project-head {
+        padding: 5px;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    #project-tile {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+    #contact-section {
+        top: 120px;
+    }
+    footer h1 {
+        font-size: 1.6rem;
+    }
+    #contact-section p {
+        font-size: 1rem;
+        margin: 20px;
+    }
+    #profile-link {
+        bottom: -120px;
+    }
+    #profile-link a {
+        font-size: 1.2rem;
+        padding: 2px;
+        margin: 10px;
+    }
+    hr {
+        top: 150px;
+        height: 3px;
+    }
+    /* .tile p {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 13px;
+    } */
+    .tile h3 {
+        font-size: 1rem;
+        top: 132px;
+        padding: 10px;
+    }
+}
